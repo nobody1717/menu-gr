@@ -89,6 +89,12 @@ body,html{
     font-size: 15px;
 }
 
+canvas {
+    display:block;
+    margin:auto;
+    background:#ecf0f110;
+  }
+
 .main_div{
     display: flex;
     flex-direction: row;
@@ -100,4 +106,12 @@ body,html{
 
 .last-item{
     text-decoration: underline;
+}
+
+.beetwen-p{
+    color:aliceblue;
+    font-size: 35px;
+    margin-top: 15px;
+    text-decoration: underline; 
+
 }
