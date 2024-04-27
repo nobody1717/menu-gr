@@ -12,12 +12,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Text:wght@100..900&family=Ysabeau+SC:wght@1..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body id="body">
     <main class="main">
-        <h1 class="main_h1">Le Cafe</h1>
+        <h1 class="main_h1 ">Le Cafe</h1>
 
-        <p class="beetwen-p"> - Drinks - </p>
+        <p class="beetwen-p"> <svg viewbox="0 0 100 20">
+  <defs>
+    <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="5%" stop-color="#ffffff"/>
+      <stop offset="95%" stop-color="#ffffff"/>
+    </linearGradient>
+    <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
+      <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
+        <animateTransform
+            attributeName="transform"
+            begin="0s"
+            dur="1.5s"
+            type="translate"
+            from="0,0"
+            to="40,0"
+            repeatCount="indefinite" />
+      </path>
+    </pattern>
+  </defs>
+  <text text-anchor="middle" x="50" y="15" font-size="13" fill="url(#wave)"  fill-opacity="0.6">Drinks</text>
+  <text text-anchor="middle" x="50" y="15" font-size="13" fill="url(#gradient)" fill-opacity="0.1">Drinks</text>
+</svg></p>
 
             <ul class="main_menu">
                 <li class="menu_item">Coca-Cola (sugar / sugar free) 5₼</li>
@@ -49,7 +71,30 @@
                 <li class="menu_item last-item">Sex on the beach 14₼</li>
                 
             </ul>
-            <p class="beetwen-p"> - Foods - </p>
+
+            <p class="beetwen-p"> <svg viewbox="0 0 100 20">
+                <defs>
+                  <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+                    <stop offset="5%" stop-color="#ffffff"/>
+                    <stop offset="95%" stop-color="#ffffff"/>
+                  </linearGradient>
+                  <pattern id="wave" x="0" y="0" width="120" height="20" patternUnits="userSpaceOnUse">
+                    <path id="wavePath" d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z" mask="url(#mask)" fill="url(#gradient)"> 
+                      <animateTransform
+                          attributeName="transform"
+                          begin="0s"
+                          dur="1.5s"
+                          type="translate"
+                          from="0,0"
+                          to="40,0"
+                          repeatCount="indefinite" />
+                    </path>
+                  </pattern>
+                </defs>
+                <text text-anchor="middle" x="50" y="15" font-size="13" fill="url(#wave)"  fill-opacity="0.6">Foods</text>
+                <text text-anchor="middle" x="50" y="15" font-size="13" fill="url(#gradient)" fill-opacity="0.1">Foods</text>
+              </svg></p>
+
             <ul class="main_menu">
                 <li class=" menu_item  ">Caesar chicken 10₼</li>
                 <li class="menu_item">Caesar Salmon 15₼</li>
@@ -68,7 +113,7 @@
     </main>
 
     <script src="js/three.r134.min.js"></script>
-    <script src="js/vanta.waves.min.js"></script>
+    <script src="js/vanta.fog.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
